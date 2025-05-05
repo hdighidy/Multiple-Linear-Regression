@@ -114,7 +114,7 @@ with tab2:
     st.subheader("📈 Evaluation After Cleaning")
     st.write(f"R2 Score: {r2_score(y_test2, preds):.3f}")
     st.write(f"RMSE: {mean_squared_error(y_test2, preds):.3f}")
-    model_results[method] = (r2_score(y_test2, preds), mean_squared_error(y_test2, preds, squared=False))
+    model_results[method] = (r2_score(y_test2, preds), mean_squared_error(y_test2, preds))
 
     # Create subplots
     fig, axes = plt.subplots(1, 3, figsize=(18, 5))
