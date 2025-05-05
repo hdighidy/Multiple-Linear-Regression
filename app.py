@@ -349,8 +349,8 @@ with tab3:
 
         st.subheader("📈 Evaluation After Cleaning")
         st.write(f"R2 Score: {r2_score(y_test3, preds3):.3f}")
-        st.write(f"RMSE: {mean_squared_error(y_test3, preds3, squared=False):.3f}")
-        model_results[handle_method] = (r2_score(y_test3, preds3), mean_squared_error(y_test3, preds3, squared=False))
+        st.write(f"RMSE: {mean_squared_error(y_test3, preds3):.3f}")
+        model_results[handle_method] = (r2_score(y_test3, preds3), mean_squared_error(y_test3, preds3))
 
         # Create subplots
         fig, axes = plt.subplots(1, 3, figsize=(18, 5))
